@@ -1,0 +1,22 @@
+<div class="box">
+    <div class="inner-box">
+    <header>
+      <h1 class="todo-title">TODO List</h1>
+      <h4>A place to store the things you have to do!</h4>
+    </header>
+    <div class="container">
+      <input class="filter" type="text" placeholder="Filter your to-dos" />
+      <div class="list">
+        <ol>
+            <li *ngFor="let task of tasks">
+          <button type="button" class="complete" (click)="doneClicked()" *ngIf="!task.completed">Complete</button>
+          <span [ngClass]="{strike: task.completed}">{{task.task}}</span>
+          <button type="button" class="remove" (click)="removeTask()">X</button>
+        </li>
+        </ol>
+      </div>
+      <input class="add" type="text" placeholder="Add your to do" [(ngModel)]="newTask" /> <br>
+      <button type="button" class="add-button" (click)="Add()">Add</button>
+    </div>
+    </div>
+    </div>

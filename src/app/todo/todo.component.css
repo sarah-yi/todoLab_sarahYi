@@ -1,0 +1,103 @@
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.box {
+  width: 500px;
+  height: 550vh;
+  background: rgb(226, 88, 111);
+  position: fixed;
+}
+
+.inner-box {
+  background: white;
+  box-shadow: 1px 1px gray;
+  border-radius: 4px;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: relative;
+  top: 20px;
+}
+
+header {
+  display: flex;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  font-weight: normal;
+}
+
+.filter {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid rgb(221, 219, 219);
+  color: rgb(221, 219, 219);
+}
+
+.todo-group {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.list {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  position: relative;
+}
+
+.complete {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: rgb(230, 126, 183);
+  color: rgb(230, 126, 183);
+}
+
+.remove {
+  border-style: none;
+  left: 350px;
+  position: absolute;
+}
+
+span {
+  width: 150px;
+  margin-left: 15px;
+}
+
+.add {
+  width: 350px;
+  height: 30px;
+  border-radius: 5x;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.add-button {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* border: 1px solid rgb(221, 219, 219); */
+  color: white;
+  background: rgb(230, 126, 183);
+}
+
+.submit {
+  background: rgb(182, 77, 135);
+}
+
+.strike {
+  text-decoration: line-through;
+}
